@@ -1,0 +1,195 @@
+/* Estilo general para todos los tamaños de pantalla */
+.slide {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #858585;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.slide-content {
+    text-align: left;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.slide-content h2 {
+    color: #ff6596;
+    margin-bottom: 15px;
+}
+
+.host-invitados {
+    margin-bottom: 20px;
+}
+
+.host-invitados h3 {
+    color: #00e8ff;
+}
+
+.host-invitados p {
+    margin: 5px 0;
+}
+
+.resumen h3 {
+    color: #ce74ff;
+}
+
+.resumen p {
+    color: #001316;
+    margin-bottom: 15px;
+}
+
+.slide-image {
+    flex-shrink: 0;
+    margin-left: 20px;
+    position: fixed;
+    top: 140px;
+    right: 85px;
+    z-index: -1;
+}
+
+.slide-image img {
+    max-width: 650px;
+    border-radius: 8px;
+}
+
+/* Estilos para pantallas medianas (notebooks) */
+@media (max-width: 2000px) {
+    .slide {
+        padding: 15px;
+    }
+
+    .slide-image img {
+        max-width: 500px;
+        top: 100px;
+        right: 50px;
+        margin-right: 2.5rem;
+    }
+}
+
+/* Estilos para pantallas medianas (notebooks) */
+@media (max-width: 1600px) {
+    .slide {
+        padding: 15px;
+    }
+
+    .slide-image img {
+        max-width: 500px;
+        top: 100px;
+        right: 50px;
+        margin-right: 2.5rem;
+    }
+}
+
+
+/* Estilos para pantallas medianas (notebooks) */
+@media (max-width: 1024px) {
+    .slide {
+        padding: 15px;
+    }
+
+    .slide-image img {
+        max-width: 500px;
+        top: 100px;
+        right: 50px;
+        margin-right: 2.5rem;
+    }
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .slide {
+        flex-direction: column;
+    }
+
+    .slide-image {
+        position: static;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .slide-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+    .slide {
+        padding: 10px;
+    }
+
+    .slide-content {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .slide-image img {
+        width: 100%;
+        max-width: none;
+        border-radius: 8px;
+    }
+}
+
+/* .slide {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #858585;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.slide-content {
+    text-align: left;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.slide-content h2 {
+    color: #ff6596;
+    margin-bottom: 15px;
+}
+
+.host-invitados {
+    margin-bottom: 20px;
+}
+
+.host-invitados h3 {
+    color: #00e8ff;
+}
+
+.host-invitados p {
+    margin: 5px 0;
+}
+
+.resumen h3 {
+    color: #ce74ff;
+}
+
+.resumen p {
+    color: #001316;
+    margin-bottom: 15px;
+}
+
+.slide-image {
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.slide-image img {
+    max-width: 650px;
+    border-radius: 8px;
+    position: fixed;
+    top: 140px;
+    right: 85px;
+    z-index: -1;
+} */

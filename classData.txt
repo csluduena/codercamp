@@ -1,0 +1,108 @@
+// src/data/classData.js
+
+const classes = [
+    {
+        title: 'Introducción al mercado laboral',
+        date: '6 de agosto',
+        host: 'Nahuel Lema',
+        hostLinkedIn: 'https://linkedin.com/in/nahuel-lema', // Link de ejemplo
+        speakers: ['Alan Gosiker'],
+        speakersLinkedIn: ['https://linkedin.com/in/alan-gosiker'], // Link de ejemplo
+        summary: 'Enfocamos en el autoconocimiento y en la identificación de tus fortalezas y debilidades.',
+        details: {
+            objetivos: 'Descubrir tus fortalezas y áreas de mejora, reflexionar sobre tus objetivos a corto y largo plazo, adquirir herramientas para potenciar tu crecimiento integral.',
+            alcances: 'Evaluación personal, análisis de resultados, herramientas de desarrollo.',
+        },
+    },
+    {
+        title: 'Autoconocimiento de skills',
+        date: '8 de agosto',
+        host: 'Nahuel Lema',
+        hostLinkedIn: 'https://linkedin.com/in/nahuel-lema', // Link de ejemplo
+        speakers: ['Rocío Trevisan', 'Cami Tejeiro'],
+        speakersLinkedIn: [
+            'https://linkedin.com/in/rocio-trevisan',
+            'https://linkedin.com/in/cami-tejeiro',
+        ], // Links de ejemplo
+        summary: 'Identificación de habilidades y competencias para un autodiagnóstico profundo.',
+        details: {
+            objetivos: 'Identificar tus fortalezas y debilidades, reflexionar sobre tus metas personales y profesionales.',
+            alcances: 'Evaluación personal, análisis de resultados, herramientas de desarrollo.',
+        },
+    },
+    {
+        title: 'Marca Personal y Networking',
+        date: '13 de agosto',
+        host: 'Nahuel Lema',
+        hostLinkedIn: 'https://linkedin.com/in/nahuel-lema',
+        speakers: ['Carolina Lancelotti'],
+        speakersLinkedIn: ['https://linkedin.com/in/carolina-lancelotti'],
+        summary: 'Desarrollo de una estrategia de marca personal y técnicas efectivas de networking.',
+        details: {
+            objetivos: 'Aprender técnicas de networking, mejorar la visibilidad profesional.',
+            alcances: 'Estrategia de marca, herramientas para construir y mantener una red de contactos efectiva.',
+        },
+    },
+    {
+        title: 'Búsqueda de ofertas de trabajo y CVs',
+        date: '15 de agosto',
+        host: 'Nahuel Lema',
+        hostLinkedIn: 'https://linkedin.com/in/nahuel-lema',
+        speakers: ['Celina Bueno Solórzano'],
+        speakersLinkedIn: ['https://linkedin.com/in/celina-bueno-solorzano'],
+        summary: 'Mejores prácticas para la búsqueda de empleo y creación de CVs efectivos.',
+        details: {
+            objetivos: 'Conocer plataformas de empleo, crear aplicaciones efectivas.',
+            alcances: 'Uso de portales de empleo, redacción de currículums y cartas de presentación.',
+        },
+    },
+    {
+        title: 'Preparación de entrevistas blandas',
+        date: '20 de agosto',
+        host: 'Segundo D\'Augerot',
+        hostLinkedIn: 'https://linkedin.com/in/segundo-daugerot',
+        speakers: ['Camila Luis'],
+        speakersLinkedIn: ['https://linkedin.com/in/camila-luis'],
+        summary: 'Desarrollo de habilidades de comunicación para entrevistas blandas.',
+        details: {
+            objetivos: 'Mejorar la comunicación verbal y no verbal, prepararse para entrevistas.',
+            alcances: 'Técnicas de comunicación, ejercicios prácticos de entrevista.',
+        },
+    },
+    {
+        title: 'Recursos para prepararse para entrevistas',
+        date: '22 de agosto',
+        host: 'Segundo D\'Augerot',
+        hostLinkedIn: 'https://linkedin.com/in/segundo-daugerot',
+        speakers: ['Johanna Dzikowsky', 'Rosangie Chirino'],
+        speakersLinkedIn: [
+            'https://linkedin.com/in/johanna-dzikowsky',
+            'https://linkedin.com/in/rosangie-chirino',
+        ],
+        summary: 'Recursos adicionales para mejorar la preparación para entrevistas.',
+        details: {
+            objetivos: 'Proveer estrategias y recursos para una preparación completa.',
+            alcances: 'Herramientas y materiales complementarios, técnicas proactivas en la búsqueda de empleo.',
+        },
+    },
+    {
+        title: 'Preparación de entrevistas técnicas: programación y producto',
+        date: '27 de agosto',
+        host: 'Nicolas Seguro',
+        hostLinkedIn: 'https://linkedin.com/in/nicolas-seguro',
+        speakers: ['Javier Caruso', 'Rocio Azparren', 'Alma Canzian'],
+        speakersLinkedIn: [
+            'https://linkedin.com/in/javier-caruso',
+            'https://linkedin.com/in/rocio-azparren',
+            'https://linkedin.com/in/alma-canzian',
+        ],
+        summary: 'Preparación para entrevistas técnicas en programación y producto.',
+        details: {
+            objetivos: 'Manejar preguntas complejas, resolver problemas en vivo.',
+            alcances: 'Demostrar habilidades técnicas, preparación para entrevistas técnicas.',
+        },
+    },
+    // Agrega más clases aquí si es necesario
+];
+
+export default classes;

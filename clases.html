@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases - CoderCamp</title>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="display-4">Resumen de Clases</h1>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <button class="navbar-toggler" onclick="toggleNavbar()">☰</button>
+            <a class="navbar-brand" href="#" onclick="toggleNavbar()">CoderCamp</a>
+            <div id="navbarNav" class="navbar-nav">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#clases">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recursos.html">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comentarios.html">Comentarios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <!-- Slider -->
+        <div class="slider">
+            <button class="slider-control prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="slides">
+                <div class="slide" id="clase1">
+                    <div class="slide-content">
+                        <h2>Clase 1: Introducción al mercado laboral</h2>
+                        <div class="slide-image">
+                            <img src="img/clase1.png" alt="Imagen representativa de la Clase 1">
+                        </div>
+                        <div class="host-invitados">
+                            <h3>Presentador:</h3>
+                            <p><a href="https://www.linkedin.com/in/nahuellema/" target="_blank">Nahuel Lema</a></p>
+                            <h3>Orador Invitado:</h3>
+                            <p><a href="https://www.linkedin.com/in/alan-gosiker/" target="_blank">Alan Gosiker</a></p>
+                        </div>
+                        <div class="resumen">
+                            <h3>Descripción General:</h3>
+                            <p>
+                                En la clase inaugural de CoderCamp, el enfoque fue el autoconocimiento. Este primer
+                                módulo tiene como objetivo ayudarte a identificar tus puntos fuertes y áreas donde
+                                puedes mejorar, así como a reflexionar sobre tus metas tanto a corto como a largo plazo.
+                                Además, se te proporcionarán herramientas clave para tu desarrollo personal y
+                                profesional.
+                            </p>
+                            <h4>🎯 Metas:</h4>
+                            <ul>
+                                <li>Identificar tus fortalezas y aspectos a mejorar.</li>
+                                <li>Reflexionar sobre tus objetivos a corto y largo plazo.</li>
+                                <li>Acceder a herramientas para impulsar tu crecimiento integral.</li>
+                            </ul>
+                            <h4>🔍 Actividades Clave:</h4>
+                            <ul>
+                                <li><strong>Autoevaluación:</strong> Realización de pruebas de personalidad, habilidades
+                                    y competencias para un diagnóstico completo.</li>
+                                <li><strong>Interpretación de resultados:</strong> Análisis colectivo de los resultados
+                                    para vincularlos con tus metas personales.</li>
+                                <li><strong>Recursos de desarrollo:</strong> Acceso a materiales prácticos diseñados
+                                    para fomentar tu desarrollo personal y profesional.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="clase2">
+                    <img src="img/clase2.png" alt="Clase 2">
+                    <div class="description">
+                        <h2>Clase 2: Autoconocimiento de skills</h2>
+                        <p>Detalles, objetivos, alcances y reflexiones personales.</p>
+                    </div>
+                </div>
+                <!-- Repite para cada clase -->
+            </div>
+            <button class="slider-control next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CoderCamp. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="js/slide.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

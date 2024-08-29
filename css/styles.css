@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "firacode";
+    src: url(../fonts/FiraCode-Medium.ttf);
+}
+
+@font-face {
+    font-family: "firacodeB";
+    src: url(../fonts/FiraCode-Bold.ttf);
+}
+
+@font-face {
+    font-family: "firacodeL";
+    src: url(FiraCode-Light.ttf);
+}
+
+@font-face {
+    font-family: gintronic;
+    src: url(../fonts/gintronic.otf);
+}
+
+/* Estilos generales */
+body {
+    background-color: #000000;
+    /* Fondo negro */
+    color: #fff248;
+    /* Texto primario en amarillo */
+    font-family: Consolas, Liberation Mono, Courier New, monospace;
+    /* Fuente general */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ff6596;
+    /* padding: 0px 20px; */
+    margin-top: -13px;
+    margin-left: 22px;
+    padding-left: 2.5rem;
+    border-radius: 6px;
+    /* padding-right: 2.5rem; */
+    margin-bottom: -7px;
+    margin-right: 22px;
+}
+
+header .display-4 {
+    color: #fff248;
+    /* Texto amarillo en el header */
+    margin-bottom: 0.5rem;
+    
+    /* Espaciado debajo del título */
+    /* font-weight: bold; */
+    /* Texto en negrita */
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: "gintronic";
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+header .lead {
+    color: #524e1f;
+    margin-top: -10px;
+    padding-bottom: 5px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #00e8ff;
+    /* padding: 10px 20px; */
+    margin-left: 22px;
+    margin-right: 22px;
+    border-radius: 6px;
+    margin-bottom: -12px;
+    padding-left: 22px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.navbar-brand {
+    color: #655e0b !important;
+    /* Texto amarillo dorado para la marca */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-right: 10px;
+    /* Espacio a la derecha de la marca */
+}
+
+.navbar-toggler {
+    cursor: pointer;
+}
+
+.a1 {
+    font-size: 16px;
+    /* Tamaño de fuente */
+}
+
+.navbar-nav .nav-link {
+    color: #ff6596;
+    /* Color rosa para los enlaces de la navbar */
+    margin-right: 15px;
+    /* Espacio entre enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #114d53;
+    /* Color verde azulado para el hover de los enlaces de la navbar */
+}
+
+/* Contenedor principal */
+main {
+    background-color: #fff248;
+    /* padding: 40px; */
+    margin: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    border-radius: 8px;
+    padding-bottom: 5px;
+}
+
+/* Secciones del contenido */
+section {
+    margin-bottom: 30px;
+    /* Espacio entre secciones */
+}
+
+/* Encabezados */
+h2 {
+    color: #ff6596;
+    /* Color rosa para encabezados */
+    margin-bottom: 20px;
+    /* Espacio debajo del encabezado */
+}
+
+h3 {
+    color: #ce74ff;
+    /* Color púrpura para títulos de las clases */
+    margin-bottom: 15px;
+    /* Espacio debajo del título */
+}
+
+/* Texto dentro de las secciones de clases */
+p {
+    color: #001316;
+    /* Texto secundario en un tono oscuro */
+    margin-bottom: 15px;
+    /* Espacio debajo del párrafo */
+}
+
+/* Footer */
+footer {
+    background-color: #291e00;
+    /* Fondo negro neutro */
+    color: #fff248;
+    /* Texto amarillo */
+    padding: 20px;
+    /* Padding en el footer */
+    text-align: center;
+    /* Centrar texto */
+    position: relative;
+    /* Para posicionar el footer correctamente */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Eliminar todos los estilos predeterminados de los enlaces */
+a {
+    text-decoration: none;
+    /* Quita el subrayado */
+    color: inherit;
+    /* Hereda el color del elemento padre (puede ser reemplazado por un color específico) */
+}
+
+/* Estilos opcionales para diferentes estados de los enlaces */
+
+/* Enlaces al pasar el ratón */
+a:hover {
+    text-decoration: none;
+    /* Asegura que el enlace no tenga subrayado al pasar el ratón */
+    color: inherit;
+    /* Hereda el color del elemento padre al pasar el ratón */
+}
+
+/* Enlaces visitados */
+a:visited {
+    color: inherit;
+    /* Hereda el color del elemento padre para enlaces visitados */
+}
+
+/* Enlaces activos */
+a:active {
+    color: inherit;
+    /* Hereda el color del elemento padre mientras el enlace está siendo clicado */
+}
+
+.text-accent:hover {
+    color: #111a3b;
+}
+
+.navbar-nav {
+    display: none;
+}
