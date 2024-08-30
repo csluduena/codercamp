@@ -46,6 +46,7 @@
 .slide-image {
     flex-shrink: 0;
     margin-left: 20px;
+    margin-right: -0.1rem;
     position: fixed;
     top: 140px;
     right: 85px;
@@ -55,6 +56,7 @@
 .slide-image img {
     max-width: 650px;
     border-radius: 8px;
+    margin-right: 2.3rem;
 }
 
 /* Estilos para pantallas medianas (notebooks) */
@@ -67,9 +69,24 @@
         max-width: 500px;
         top: 100px;
         right: 50px;
-        margin-right: 2.5rem;
+        margin-right: 0.4rem;
     }
 }
+
+/* Estilos para pantallas medianas (notebooks) */
+@media (max-width: 1900px) {
+    .slide {
+        padding: 15px;
+    }
+
+    .slide-image img {
+        max-width: 500px;
+        top: 100px;
+        right: 50px;
+        margin-right: 2.3rem;
+    }
+}
+
 
 /* Estilos para pantallas medianas (notebooks) */
 @media (max-width: 1600px) {
@@ -81,7 +98,7 @@
         max-width: 500px;
         top: 100px;
         right: 50px;
-        margin-right: 2.5rem;
+        margin-right: 2.3rem;
     }
 }
 
@@ -109,12 +126,13 @@
     .slide-image {
         position: static;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .slide-image img {
         max-width: 100%;
         height: auto;
+        margin-left: 10px;
     }
 }
 
@@ -133,7 +151,12 @@
         width: 100%;
         max-width: none;
         border-radius: 8px;
+        margin-left: -1px;
     }
+}
+
+.textAln {
+    width: 32%;
 }
 
 /* .slide {
