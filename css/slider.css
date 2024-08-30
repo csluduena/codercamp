@@ -46,7 +46,6 @@
 .slide-image {
     flex-shrink: 0;
     margin-left: 20px;
-    margin-right: -0.1rem;
     position: fixed;
     top: 140px;
     right: 85px;
@@ -54,41 +53,75 @@
 }
 
 .slide-image img {
-    max-width: 650px;
+    max-width: 925px;
+    /* Ajustar según el diseño */
     border-radius: 8px;
-    margin-right: 2.3rem;
 }
 
-/* Estilos para pantallas medianas (notebooks) */
+/* Estilos para los botones del slider */
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente los botones */
+}
+
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.slider-control.prev {
+    left: 10px;
+    /* Ajusta la distancia desde el borde izquierdo */
+}
+
+.slider-control.next {
+    right: 10px;
+    /* Ajusta la distancia desde el borde derecho */
+}
+
+/* Estilo opcional para mejorar la visibilidad de los botones */
+.slider-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para pantallas grandes (notebooks) */
 @media (max-width: 2000px) {
     .slide {
         padding: 15px;
     }
 
     .slide-image img {
-        max-width: 500px;
+        max-width: 925px;
         top: 100px;
         right: 50px;
         margin-right: 0.4rem;
     }
 }
 
-/* Estilos para pantallas medianas (notebooks) */
+/* Estilos para pantallas medianas */
 @media (max-width: 1900px) {
     .slide {
         padding: 15px;
     }
 
     .slide-image img {
-        max-width: 500px;
+        max-width: 925px;
         top: 100px;
         right: 50px;
         margin-right: 2.3rem;
     }
 }
 
-
-/* Estilos para pantallas medianas (notebooks) */
 @media (max-width: 1600px) {
     .slide {
         padding: 15px;
@@ -102,8 +135,6 @@
     }
 }
 
-
-/* Estilos para pantallas medianas (notebooks) */
 @media (max-width: 1024px) {
     .slide {
         padding: 15px;
@@ -159,60 +190,10 @@
     width: 32%;
 }
 
-/* .slide {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #858585;
-    border-radius: 8px;
-    z-index: 0;
+.sliderLeftArrow {
+    margin-left: -2.5%;
 }
 
-.slide-content {
-    text-align: left;
-    flex: 1;
-    margin-right: 20px;
+.sliderRightArrow {
+    margin-right: -2.5%;
 }
-
-.slide-content h2 {
-    color: #ff6596;
-    margin-bottom: 15px;
-}
-
-.host-invitados {
-    margin-bottom: 20px;
-}
-
-.host-invitados h3 {
-    color: #00e8ff;
-}
-
-.host-invitados p {
-    margin: 5px 0;
-}
-
-.resumen h3 {
-    color: #ce74ff;
-}
-
-.resumen p {
-    color: #001316;
-    margin-bottom: 15px;
-}
-
-.slide-image {
-    flex-shrink: 0;
-    margin-left: 20px;
-}
-
-.slide-image img {
-    max-width: 650px;
-    border-radius: 8px;
-    position: fixed;
-    top: 140px;
-    right: 85px;
-    z-index: -1;
-} */
