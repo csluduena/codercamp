@@ -1,12 +1,10 @@
 .slide {
     position: relative;
-    /* Contenedor relativo para la imagen absoluta */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     background-color: #64af91;
-    /* background-color: #858585; */
     border-radius: 8px;
 }
 
@@ -26,7 +24,8 @@
 }
 
 .host-invitados h3 {
-    color: #00e8ff;
+    color: #00ffec;
+    text-shadow: -2px 2px 1px black;
 }
 
 .host-invitados p {
@@ -45,17 +44,13 @@
 
 .slide-image {
     position: absolute;
-    /* Ahora es absoluto en relación al contenedor relativo */
     top: 140px;
-    /* Ajusta según sea necesario */
     right: 85px;
-    /* Ajusta según sea necesario */
     z-index: 0;
 }
 
 .slide-image img {
     max-width: 925px;
-    /* Ajustar según el diseño */
     border-radius: 8px;
 }
 
@@ -64,7 +59,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    /* Otras propiedades según sea necesario */
 }
 
 .slide {
@@ -75,9 +69,7 @@
 .slider-control {
     position: absolute;
     top: 50%;
-    /* Posiciona verticalmente en el centro del contenedor */
     transform: translateY(-50%);
-    /* Ajusta la posición para centrar verticalmente */
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
@@ -85,7 +77,6 @@
     cursor: pointer;
     font-size: 18px;
     z-index: 1;
-    /* Asegura que estén por encima del contenido */
 }
 
 .slider-control.prev {
@@ -100,7 +91,6 @@
     margin-top: 0rem !important;
 }
 
-/* Estilo opcional para mejorar la visibilidad de los botones */
 .slider-control:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -114,17 +104,14 @@
     text-shadow: -2px 2px black;
 }
 
-/* Estilos para pantallas grandes (notebooks) */
 @media (max-width: 2000px) {
     .slide-image img {
         max-width: 925px;
         margin-top: -13%;
         margin-right: -3.4rem;
-        /* margin-right: 0.4rem; */
     }
 }
 
-/* Estilos para pantallas medianas */
 @media (max-width: 1900px) {
     .slide {
         padding: 15px;
@@ -164,28 +151,6 @@
     }
 }
 
-/* @media (max-width: 1050px) {
-    .slide {
-        padding: 15px;
-    }
-
-    .slide-content {
-        text-align: center;
-    }
-
-    .textAln {
-        margin-left: 14%;
-        margin-right: 11%;
-    }
-
-    .slide-image img {
-        max-width: 517px;
-        margin-top: -56px;
-        right: 50px;
-        margin-right: -2.5rem;
-    }
-} */
-
 @media (min-width: 884px) and (max-width: 1050px) {
     .slide {
         padding: 15px;
@@ -214,17 +179,28 @@
     }
 }
 
-/* Estilos para tablets */
 @media (max-width: 768px) {
     .slide {
         flex-direction: column;
     }
 
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav ul {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
     .social-links {
         grid-template-columns: repeat(2, 1fr);
-        /* Dos columnas en pantallas medianas */
         gap: 15px;
-        /* Espacio más grande entre botones */
     }
 
 
@@ -248,24 +224,16 @@
 
     .social-links {
         grid-template-columns: repeat(1, 1fr);
-        /* Una columna en pantallas pequeñas */
         gap: 20px;
-        /* Espacio entre botones */
     }
 
     .social-links {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* Tres columnas */
         gap: 10px;
-        /* Espacio entre los botones */
         max-width: 600px;
-        /* Máxima anchura del contenedor */
         margin: 0 auto;
-        /* Centra el contenedor */
     }
-
-    
 
     .slide-content {
         margin-right: 0;
@@ -278,7 +246,6 @@
     }
 }
 
-/* Estilos para móviles */
 @media (max-width: 480px) {
     .slide {
         padding: 10px;
@@ -286,24 +253,16 @@
 
     .social-links {
         grid-template-columns: repeat(1, 1fr);
-        /* Una columna en pantallas pequeñas */
         gap: 20px;
-        /* Espacio entre botones */
     }
 
     .social-links {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* Tres columnas */
         gap: 10px;
-        /* Espacio entre los botones */
         max-width: 600px;
-        /* Máxima anchura del contenedor */
         margin: 0 auto;
-        /* Centra el contenedor */
     }
-
-    
 
     .slide-content {
         margin-right: 0;
@@ -354,4 +313,3 @@
 .clase1 {
     position: relative;
 }
-

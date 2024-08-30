@@ -18,34 +18,26 @@
     src: url(../fonts/gintronic.otf);
 }
 
-/* Estilos generales */
 body {
     background-color: #000000;
-    /* Fondo negro */
     color: #fff248;
-    /* Texto primario en amarillo */
     font-family: Consolas, Liberation Mono, Courier New, monospace;
-    /* Fuente general */
     margin: 0;
     padding: 0;
 }
 
-/* Header */
 header {
     background-color: #ff6596;
-    /* padding: 0px 20px; */
     margin-top: -13px;
     margin-left: 22px;
     padding-left: 2.5rem;
     border-radius: 6px;
-    /* padding-right: 2.5rem; */
     margin-bottom: -7px;
     margin-right: 22px;
 }
 
 header .display-4 {
     color: #fff248;
-    /* Texto amarillo en el header */
     margin-bottom: 15px;
     text-shadow: -2px 2px 0px black;
     font-family: "gintronic";
@@ -59,57 +51,94 @@ header .lead {
     padding-bottom: 5px;
 }
 
-/* Navbar */
+/* .imgCoderCamp {
+    background-image: url(../img/coderCamp.png);
+    background-size: 19%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg);
+    z-index: 1;
+    clip-path: circle(11.5% at 50% 50%);
+    position: absolute;
+    top: 129px;
+    right: -651px;
+    transition: transform 0.3s ease;
+} */
+
+/* .imgCoderCamp:hover {
+    transform: rotate(16deg) scale(1.1);
+    box-shadow: 0px 4px 0px 2000px #ffffff;
+    clip-path: circle(9.5% at 50% 50%);
+} */
+
 .navbar {
     background-color: #00e8ff;
-    /* padding: 10px 20px; */
+    padding: 10px 20px;
+    border-radius: 6px;
     margin-left: 22px;
     margin-right: 22px;
-    border-radius: 6px;
     margin-bottom: -12px;
-    padding-left: 22px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-brand {
-    color: #655e0b !important;
-    /* Texto amarillo dorado para la marca */
+    color: #050502 !important;
     font-weight: bold;
-    /* Texto en negrita */
-    margin-right: 10px;
-    /* Espacio a la derecha de la marca */
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .navbar-toggler {
     cursor: pointer;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .a1 {
     font-size: 16px;
-    /* Tamaño de fuente */
 }
 
 .navbar-nav .nav-link {
     color: #ff6596;
-    /* Color rosa para los enlaces de la navbar */
-    margin-right: 15px;
-    /* Espacio entre enlaces */
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+
+.navbar-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
 }
 
 .navbar-nav .nav-link:hover {
     color: #114d53;
-    /* Color verde azulado para el hover de los enlaces de la navbar */
+    text-shadow: 1px 1px 1px black;
+}
+
+.mveLft {
+    margin-left: 2%;
 }
 
 .nav-item {
     text-shadow: -2px 1px 0px #fce700;
 }
 
-/* Contenedor principal */
 main {
     background-color: #fff248;
-    /* padding: 40px; */
     margin: 20px;
     padding-left: 40px;
     padding-right: 40px;
@@ -118,53 +147,52 @@ main {
     padding-bottom: 5px;
 }
 
-/* Secciones del contenido */
 section {
     margin-bottom: 30px;
-    /* Espacio entre secciones */
 }
 
-/* Encabezados */
 h2 {
     color: #ff6596;
-    /* Color rosa para encabezados */
     margin-bottom: 20px;
-    /* Espacio debajo del encabezado */
 }
 
 h3 {
     color: #ce74ff;
-    /* Color púrpura para títulos de las clases */
     margin-bottom: 15px;
-    /* Espacio debajo del título */
 }
 
-/* Texto dentro de las secciones de clases */
 p {
     color: #001316;
-    /* Texto secundario en un tono oscuro */
     margin-bottom: 15px;
-    /* Espacio debajo del párrafo */
 }
 
-/* Footer */
-/* footer {
-    background-color: #f36487;
-    color: #fff248;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 0 1.1%;
-    position: relative;
-    bottom: 9px;
-    width: calc(100% - 2.2%);
-    
-} */
+.clrOs {
+    color: #001316;
+}
+
+.clrOs2 {
+    color: #00e8ff;
+    text-shadow: -1px 1px 1px black;
+}
+
+.clrOs1 {
+    color: #06646d;
+    text-shadow: -1px 1px 1px #15d1c3;
+}
+
+.botUp {
+    margin-bottom: 13px;
+    margin-top: 3px;
+}
+
+.boDo {
+    margin-bottom: 4px;
+    margin-top: 13px;
+}
 
 footer {
     background-color: #f36487;
     color: #fff248;
-    /* padding: 20px; */
     text-align: center;
     position: relative;
     margin-left: 1.1%;
@@ -176,19 +204,14 @@ footer {
     margin-top: -12px;
 }
 
-/* Aplica el efecto de sombra a las imágenes */
 .image-shadow {
     transition: all 0.3s ease;
-    /* Transición suave para el efecto */
 }
 
 .image-shadow:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra al pasar el puntero */
     transform: scale(1.05);
-    /* Leve aumento de tamaño */
 }
-
 
 .social-links {
     margin: 10px 0;
@@ -196,79 +219,56 @@ footer {
 
 .social-links a {
     color: #fff248;
-    /* Color de los enlaces */
     text-decoration: none;
     margin: 0 10px;
     font-size: 16px;
     border: 2px solid #fff248;
-    /* Borde de los enlaces */
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    /* Efectos de transición */
 }
 
 .social-links a:hover {
     background-color: #fff248;
-    /* Fondo en hover */
     color: #f36487;
-    /* Color del texto en hover */
 }
 
 .social-icon.linkedin::before {
     content: "🔗";
-    /* Icono para LinkedIn */
 }
 
 .social-icon.github::before {
     content: "🐙";
-    /* Icono para GitHub */
 }
 
 .social-icon.website::before {
     content: "🌐";
-    /* Icono para Website */
 }
 
 .social-icon.cv::before {
     content: "📄";
-    /* Icono para CV */
 }
 
 footer p {
     margin: 10px 0;
 }
 
-
-
-/* Eliminar todos los estilos predeterminados de los enlaces */
 a {
     text-decoration: none;
-    /* Quita el subrayado */
     color: inherit;
-    /* Hereda el color del elemento padre (puede ser reemplazado por un color específico) */
 }
 
-/* Estilos opcionales para diferentes estados de los enlaces */
-
-/* Enlaces al pasar el ratón */
 a:hover {
     text-decoration: none;
-    /* Asegura que el enlace no tenga subrayado al pasar el ratón */
     color: inherit;
-    /* Hereda el color del elemento padre al pasar el ratón */
 }
 
-/* Enlaces visitados */
 a:visited {
     color: inherit;
-    /* Hereda el color del elemento padre para enlaces visitados */
 }
 
-/* Enlaces activos */
 a:active {
     color: inherit;
-    /* Hereda el color del elemento padre mientras el enlace está siendo clicado */
 }
 
 .text-accent:hover {
@@ -276,7 +276,7 @@ a:active {
 }
 
 .navbar-nav {
-    display: none;
+    display: flex;
 }
 
 .shortTxt {
@@ -289,28 +289,15 @@ a:active {
 
 .efectoShw {
     width: calc(100% - 6rem);
-    /* El ancho es 100% menos 6rem (3rem de cada lado) */
     margin: 0 auto;
-    /* Centra las cajas automáticamente */
     display: block;
-    /* Asegura que el enlace se comporte como un bloque */
     text-decoration: none;
-    /* Elimina el subrayado de los enlaces */
     color: inherit;
-    /* Hereda el color del texto */
     transition: all 0.3s ease;
-    /* Transición suave */
 }
-
-/* .efectoShw:hover {
-    box-shadow: 1px 1px 9px 5px black;
-    padding: 10px;
-    transform: scale(1.02);
-} */
 
 .efectoShw div {
     padding-bottom: 5px;
-    /* Añade padding dentro del contenido */
 }
 
 .efectoShw:hover {
@@ -363,7 +350,6 @@ li {
     justify-items: start;
     margin-left: 25%;
     margin-right: 25%;
-    /* text-align: left; */
 }
 
 .ttCent {

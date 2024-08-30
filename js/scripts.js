@@ -1,10 +1,10 @@
 //ocultar nav
-function toggleNavbar() {
-    var navbar = document.getElementById("navbarNav");
-    if (navbar.style.display === "block") {
-        navbar.style.display = "none";
+function toggleNavbar(show) {
+    const navbarNav = document.getElementById("navbarNav");
+    if (typeof show === "boolean") {
+        navbarNav.style.display = show ? "block" : "none";
     } else {
-        navbar.style.display = "block";
+        navbarNav.style.display = navbarNav.style.display === "block" ? "none" : "block";
     }
 }
 
