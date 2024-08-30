@@ -7,3 +7,4 @@ function toggleNavbar() {
         navbar.style.display = "block";
     }
 }
+

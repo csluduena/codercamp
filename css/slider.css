@@ -1,14 +1,13 @@
-/* Estilo general para todos los tamaños de pantalla */
 .slide {
-    display: flex;
     position: relative;
-    flex-direction: row;
+    /* Contenedor relativo para la imagen absoluta */
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #858585;
+    background-color: #64af91;
+    /* background-color: #858585; */
     border-radius: 8px;
-    z-index: 0;
 }
 
 .slide-content {
@@ -36,6 +35,7 @@
 
 .resumen h3 {
     color: #ce74ff;
+    text-shadow: -2px 2px black;
 }
 
 .resumen p {
@@ -44,12 +44,13 @@
 }
 
 .slide-image {
-    flex-shrink: 0;
-    margin-left: 20px;
-    position: fixed;
+    position: absolute;
+    /* Ahora es absoluto en relación al contenedor relativo */
     top: 140px;
+    /* Ajusta según sea necesario */
     right: 85px;
-    z-index: -1;
+    /* Ajusta según sea necesario */
+    z-index: 0;
 }
 
 .slide-image img {
@@ -58,18 +59,25 @@
     border-radius: 8px;
 }
 
-/* Estilos para los botones del slider */
+/* Contenedor del slider */
 .slider {
     position: relative;
     display: flex;
     align-items: center;
-    /* Centra verticalmente los botones */
+    /* Otras propiedades según sea necesario */
 }
 
+.slide {
+    min-height: 80vh;
+}
+
+/* Controles del slider */
 .slider-control {
     position: absolute;
     top: 50%;
+    /* Posiciona verticalmente en el centro del contenedor */
     transform: translateY(-50%);
+    /* Ajusta la posición para centrar verticalmente */
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
@@ -77,16 +85,19 @@
     cursor: pointer;
     font-size: 18px;
     z-index: 1;
+    /* Asegura que estén por encima del contenido */
 }
 
 .slider-control.prev {
-    left: 10px;
-    /* Ajusta la distancia desde el borde izquierdo */
+    position: fixed;
+    left: 25px;
+    margin-top: 0rem !important;
 }
 
 .slider-control.next {
-    right: 10px;
-    /* Ajusta la distancia desde el borde derecho */
+    position: fixed;
+    right: 25px;
+    margin-top: 0rem !important;
 }
 
 /* Estilo opcional para mejorar la visibilidad de los botones */
@@ -94,17 +105,22 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.textAln {
+    margin-right: 68%;
+}
+
+.hovIn:hover {
+    color: #f3ef41;
+    text-shadow: -2px 2px black;
+}
+
 /* Estilos para pantallas grandes (notebooks) */
 @media (max-width: 2000px) {
-    .slide {
-        padding: 15px;
-    }
-
     .slide-image img {
         max-width: 925px;
-        top: 100px;
-        right: 50px;
-        margin-right: 0.4rem;
+        margin-top: -13%;
+        margin-right: -3.4rem;
+        /* margin-right: 0.4rem; */
     }
 }
 
@@ -122,20 +138,20 @@
     }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
     .slide {
         padding: 15px;
     }
 
     .slide-image img {
-        max-width: 500px;
-        top: 100px;
+        max-width: 634px;
+        margin-top: -11%;
         right: 50px;
         margin-right: 2.3rem;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1250px) {
     .slide {
         padding: 15px;
     }
@@ -145,6 +161,56 @@
         top: 100px;
         right: 50px;
         margin-right: 2.5rem;
+    }
+}
+
+/* @media (max-width: 1050px) {
+    .slide {
+        padding: 15px;
+    }
+
+    .slide-content {
+        text-align: center;
+    }
+
+    .textAln {
+        margin-left: 14%;
+        margin-right: 11%;
+    }
+
+    .slide-image img {
+        max-width: 517px;
+        margin-top: -56px;
+        right: 50px;
+        margin-right: -2.5rem;
+    }
+} */
+
+@media (min-width: 884px) and (max-width: 1050px) {
+    .slide {
+        padding: 15px;
+    }
+
+    .slide-image img {
+        max-width: 500px;
+        top: 100px;
+        right: 50px;
+        margin-left: 14%;
+        margin-right: 11%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 883px) {
+    .slide {
+        padding: 15px;
+    }
+
+    .slide-image img {
+        max-width: 383px;
+        top: 100px;
+        right: 50px;
+        margin-left: 14%;
+        margin-right: 11%;
     }
 }
 
@@ -161,9 +227,20 @@
     }
 
     .slide-image img {
-        max-width: 100%;
+        background-position: center;
+        max-width: 66%;
         height: auto;
-        margin-left: 10px;
+        margin-left: 9%;
+        margin-top: 2%;
+    }
+
+    .slide-content {
+        text-align: center;
+    }
+
+    .textAln {
+        margin-left: 14%;
+        margin-right: 11%;
     }
 }
 
@@ -183,17 +260,23 @@
         max-width: none;
         border-radius: 8px;
         margin-left: -1px;
+        margin-top: -2%;
+    }
+
+    .textAln {
+        margin-left: 14%;
+        margin-right: 11%;
+    }
+
+    .sliderLeftArrow {
+        margin-left: -2.5%;
+    }
+
+    .sliderRightArrow {
+        margin-right: -2.5%;
     }
 }
 
-.textAln {
-    width: 32%;
-}
-
-.sliderLeftArrow {
-    margin-left: -2.5%;
-}
-
-.sliderRightArrow {
-    margin-right: -2.5%;
+.clase1 {
+    position: relative;
 }
