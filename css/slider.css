@@ -220,6 +220,14 @@
         flex-direction: column;
     }
 
+    .social-links {
+        grid-template-columns: repeat(2, 1fr);
+        /* Dos columnas en pantallas medianas */
+        gap: 15px;
+        /* Espacio más grande entre botones */
+    }
+
+
     .slide-image {
         position: static;
         margin-left: 0;
@@ -238,6 +246,32 @@
         text-align: center;
     }
 
+    .social-links {
+        grid-template-columns: repeat(1, 1fr);
+        /* Una columna en pantallas pequeñas */
+        gap: 20px;
+        /* Espacio entre botones */
+    }
+
+    .social-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Tres columnas */
+        gap: 10px;
+        /* Espacio entre los botones */
+        max-width: 600px;
+        /* Máxima anchura del contenedor */
+        margin: 0 auto;
+        /* Centra el contenedor */
+    }
+
+    
+
+    .slide-content {
+        margin-right: 0;
+        text-align: center;
+    }
+
     .textAln {
         margin-left: 14%;
         margin-right: 11%;
@@ -249,6 +283,27 @@
     .slide {
         padding: 10px;
     }
+
+    .social-links {
+        grid-template-columns: repeat(1, 1fr);
+        /* Una columna en pantallas pequeñas */
+        gap: 20px;
+        /* Espacio entre botones */
+    }
+
+    .social-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Tres columnas */
+        gap: 10px;
+        /* Espacio entre los botones */
+        max-width: 600px;
+        /* Máxima anchura del contenedor */
+        margin: 0 auto;
+        /* Centra el contenedor */
+    }
+
+    
 
     .slide-content {
         margin-right: 0;
@@ -275,8 +330,28 @@
     .sliderRightArrow {
         margin-right: -2.5%;
     }
+
+    .lowqe {
+        color: #001316;
+        padding-left: 10px;
+        font-size: 12px;
+        margin-left: -65px;
+        margin-right: -40px;
+    }
+}
+
+@media (min-width: 380px) {
+    .lowqe {
+        color: #001316;
+        padding-left: 10px;
+        font-size: 12px;
+        margin-left: -65px;
+        margin-right: -40px;
+    }
+
 }
 
 .clase1 {
     position: relative;
 }
+

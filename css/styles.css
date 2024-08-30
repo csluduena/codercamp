@@ -286,3 +286,103 @@ a:active {
 .shadowT {
     text-shadow: -1px 1px 2px black;
 }
+
+.efectoShw {
+    width: calc(100% - 6rem);
+    /* El ancho es 100% menos 6rem (3rem de cada lado) */
+    margin: 0 auto;
+    /* Centra las cajas automáticamente */
+    display: block;
+    /* Asegura que el enlace se comporte como un bloque */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    color: inherit;
+    /* Hereda el color del texto */
+    transition: all 0.3s ease;
+    /* Transición suave */
+}
+
+/* .efectoShw:hover {
+    box-shadow: 1px 1px 9px 5px black;
+    padding: 10px;
+    transform: scale(1.02);
+} */
+
+.efectoShw div {
+    padding-bottom: 5px;
+    /* Añade padding dentro del contenido */
+}
+
+.efectoShw:hover {
+    box-shadow: 1px 1px 9px 5px black;
+    padding: 10px;
+}
+
+.subTi {
+    color: black;
+    padding-left: 12px;
+}
+
+.rigP {
+    text-align: right;
+}
+
+.FlexBody1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.liCfg {
+    text-decoration: none;
+    color: #f36487;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.liCfg:hover {
+    color: #111a3b;
+}
+
+.txtAcom {
+    color: #001316;
+    padding-left: 20px;
+}
+
+.movAll {
+    display: grid;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-items: start;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* text-align: left; */
+}
+
+.ttCent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bttmDs {
+    margin-top: -8px;
+}
+
+.clrT {
+    color: #111a3b;
+    margin-bottom: -5px;
+}
+
+.clV {
+    color: #ce74ff;
+    text-shadow: -1px 2px 0px black;
+}
